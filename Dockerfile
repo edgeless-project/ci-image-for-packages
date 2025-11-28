@@ -1,4 +1,4 @@
-FROM rust:1.82 AS builder
+FROM rust:1.90 AS builder
 WORKDIR /usr/src
 RUN apt-get update -y && apt-get install -y \
     git \
@@ -6,6 +6,7 @@ RUN apt-get update -y && apt-get install -y \
     clang \
     curl \
     libssl-dev \
+    libtss2-dev \
     protobuf-compiler \
     libprotobuf-dev \
     mold \
