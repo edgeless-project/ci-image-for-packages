@@ -7,6 +7,7 @@ RUN apt-get update -y && apt-get install -y \
     curl \
     libssl-dev \
     libtss2-dev \
+    pkg-config \
     protobuf-compiler \
     libprotobuf-dev \
     mold \
